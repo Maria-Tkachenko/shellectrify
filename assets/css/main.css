@@ -3033,14 +3033,14 @@
 			#header input[type="reset"]:hover,
 			#header input[type="button"]:hover,
 			#header .button:hover {
-				background-color: rgba(153, 153, 153, 0.25);
+				background-color: #D6A100;
 			}
 
 			#header input[type="submit"]:active,
 			#header input[type="reset"]:active,
 			#header input[type="button"]:active,
 			#header .button:active {
-				background-color: rgba(153, 153, 153, 0.5);
+				background-color: #D6A100;
 			}
 
 		#header .container {
@@ -3133,7 +3133,7 @@
 
 			.dropotron li.active > a, .dropotron li.active > span, .dropotron li:hover > a, .dropotron li:hover > span {
 				background: #e89980;
-				color: #ffffff;
+				color: #D6A100;
 			}
 
 		.dropotron.level-0 {
@@ -3147,7 +3147,7 @@
 				-ms-transform: rotate(45deg);
 				transform: rotate(45deg);
 				background: #fff;
-				border: solid 1px rgba(229, 229, 229, 0.5);
+				border: solid 1px #D6A100;
 				border-bottom: 0;
 				border-right: 0;
 				box-shadow: -0.25em -0.125em 0.125em 0 rgba(0, 0, 0, 0.015);
@@ -3555,7 +3555,7 @@
 					#navButton .toggle:before {
 						background: rgba(214, 161, 0, 0.1); /* navbutton for phone */
 						border-radius: 6px;
-						color: #fff;
+						color: #D6A100;
 						content: '\f0c9';
 						display: block;
 						font-size: 16px;
@@ -3573,10 +3573,14 @@
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;
 				backface-visibility: hidden;
-				-moz-transform: translateX(-275px);
+				-moz-transform: translateX(-100%);
+    			-webkit-transform: translateX(-100%);
+    			-ms-transform: translateX(-100%);
+    			transform: translateX(-100%);
+				/*-moz-transform: translateX(-275px);
 				-webkit-transform: translateX(-275px);
 				-ms-transform: translateX(-275px);
-				transform: translateX(-275px);
+				transform: translateX(-275px);*/
 				-moz-transition: -moz-transform 0.5s ease;
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
@@ -3587,7 +3591,7 @@
 				overflow-y: auto;
 				position: fixed;
 				top: 0;
-				width: 275px;
+				width: 100%;
 				z-index: 10002;
 				background: #1D232A;
 				color: #fff;
@@ -3596,7 +3600,7 @@
 				#navPanel .link {
 					border-bottom: 0;
 					border-top: solid 1px rgba(255, 255, 255, 0.05);
-					color: #bbb;
+					color: #D6A100; /* color for the childs */
 					display: block;
 					height: 44px;
 					line-height: 44px;
@@ -3609,12 +3613,13 @@
 					}
 
 					#navPanel .link.depth-0 {
-						color: #D6A100;
+						color: #D6A100; /* color for the first level */
 					}
 
 					#navPanel .link .indent-1 {
 						display: inline-block;
 						width: 1em;
+						color: #D6A100;
 					}
 
 					#navPanel .link .indent-2 {
