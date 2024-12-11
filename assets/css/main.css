@@ -22,6 +22,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		scroll-behavior: smooth;
 	}
 
 	article, aside, details, figcaption, figure,
@@ -2251,7 +2252,8 @@
 /* Box */
 
 	.box {
-		background: #fff;
+		background: #14191F;
+		color: #fff;
 		border-radius: 6px;
 		box-shadow: 0 2px 0 0 #e5e5e5;
 		margin: 0 0 2em 0;
